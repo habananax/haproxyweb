@@ -21,8 +21,6 @@ services:
         build: ./haproxy
         ports:
             - 8383:80
-        expose:
-            - 8383
         networks:
             public_net:
                 ipv4_address: ${HA_PROXY_IP}
